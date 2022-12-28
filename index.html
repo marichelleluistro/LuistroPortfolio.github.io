@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Porfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo1.jpg" class="LOGO2">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">ACHIEVEMENTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        </div>
+    </div>
+</div> 
+<!----------about---------->  
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/work.png.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I am Marichelle Luistro and you can call me Mitch for short, a 20yrs. Old woman from Brgy.linao Ormoc City
+                        and taking a course of Bachelor of Science in Information Technology in Eastern Visayas State University. </p>
+                
+                    <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>   
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Treshaiyan</span><br>lyrist</li>
+                            <li><span>Linao Parish Church</span><br>PYM</li>
+                            <li><span>Riway</span><br>Associates</li>
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Top One 888 Inc.</span><br>Information</li>
+                            <li><span>Otap Dry Goods</span><br>Stock Incharge</li>
+                            <li><span>Pc Specialist</span><br>Assistance</li>
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2013-2014</span><br>Linao Central School</li>
+                            <li><span>2017-2018</span><br>Linao National HighSchool</li>
+                            <li><span>2019-2020</span><br>Ormoc City Senior HighSchool</li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------achievements--------->
+    <div id="achievements">
+        <div class="container">
+            <h1 class="sub-title">My Achievements</h1>
+            <div class="achievements-list">
+                <div class="achievements">
+                    <img src="images/320499631_467911135507013_3271386439874432028_n.jpg">
+                    <div class="layer">
+                        <h3>OCSHS</h3>
+                        <P>When I was in Seniorhigh days it was grade 12 when I received with honors award with an average of 91% in my grades 
+                            and also a conduct award certificate, so as a student it was a great achievements that comes in me. </P>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="achievements">
+                    <img src="images/319803563_3509891109233689_5539041722648034801_n.jpg">
+                    <div class="layer">
+                        <h3>TRESHAIYAN</h3>
+                        <P>As a member of this group of band or drum,lyre & bugle corp.i was so happy and enjoyed of being in this group, In last 2019 our 
+                            group won a 2nd runner up in Drum,Lyre & bugle Competition in Ormoc City, It was a great achievement for us.</P>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div> 
+                </div>
+                <div class="achievements">
+                    <img src="images/318477562_1871007153264500_334411414017841234_n.jpg">
+                    <div class="layer">
+                        <h3>RIWAY</h3>
+                        <P>So much grateful knowing this Riway Company, I'm currently an associate in this and even though I am not a totally
+                            an advocate in this company but still grateful for being a part of this company, Everyday I feel so much amazing of being surrounded
+                        by successful people and keeping me inspires always, soon I'll become like them and that's a great achievement I am waiting for.  </P>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+     
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+
+    </script>
+
+</body>
+</html>
